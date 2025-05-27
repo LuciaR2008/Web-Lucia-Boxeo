@@ -37,17 +37,19 @@
             right: 10px;
             z-index: 20;
         }
-        .dropbtn {
+        .dropbtn, .inicio-link {
             background-color: #333;
             color: #fff;
             padding: 10px 15px;
             font-size: 16px;
             border: none;
-            cursor: pointer;
             border-radius: 4px;
             user-select: none;
+            text-decoration: none;
+            margin-right: 10px;
+            cursor: pointer;
         }
-        .dropbtn:hover { background-color: #555; }
+        .dropbtn:hover, .inicio-link:hover { background-color: #555; }
         .dropdown {
             position: relative; display: inline-block;
         }
@@ -93,8 +95,11 @@
         <img class="bg" src="Encabezado1.png" alt="Encabezado">
         <img class="logo" src="Logo.1 Pag principal.png" alt="Logo">
         <div class="menu-superior">
+            <!-- Enlace directo al inicio -->
+            <a href="index.html" class="inicio-link">Inicio</a>
+            <!-- Menú desplegable para las otras secciones -->
             <div class="dropdown">
-                <button onclick="toggleDropdown()" class="dropbtn">Inicio ▼</button>
+                <button onclick="toggleDropdown()" class="dropbtn">Secciones ▼</button>
                 <div id="myDropdown" class="dropdown-content">
                     <a href="boxeo.html">Boxeo</a>
                     <a href="kickboxing.html">Kick Boxing</a>
