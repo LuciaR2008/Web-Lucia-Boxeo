@@ -4,10 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Mi Página de Artes Marciales</title>
-
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" href="Logo.1-Pag-principal.ico" />
-
     <style>
         * { box-sizing: border-box; }
         html, body {
@@ -91,14 +87,11 @@
         }
     </style>
 </head>
-
 <body>
     <!-- ===== ENCABEZADO ===== -->
     <header>
         <img class="bg" src="Encabezado.png" alt="Encabezado">
         <img class="logo" src="Logo.1 Pag principal.png" alt="Logo">
-
-        <!-- Menú desplegable -->
         <div class="menu-superior">
             <div class="dropdown">
                 <button onclick="toggleDropdown()" class="dropbtn">Inicio ▼</button>
@@ -110,29 +103,22 @@
             </div>
         </div>
     </header>
-
     <!-- ===== IMAGEN BAJO ENCABEZADO ===== -->
     <section class="section">
         <img src="Fotobajoencabezado-portada.png" alt="Artes marciales">
     </section>
-
     <!-- ===== OTRA SECCIÓN MEDIA ===== -->
     <section class="section">
         <img src="partemediapagprincipal.png" alt="Parte media">
     </section>
-
     <!-- ===== SECCIÓN CON BOTONES ===== -->
     <section class="section">
         <img src="Botonesinferiorespagprincipal.png" alt="Botones inferiores">
     </section>
-
 <script>
-    // Mostrar/ocultar menú desplegable al hacer clic en el botón
     function toggleDropdown() {
         document.getElementById("myDropdown").classList.toggle("show");
     }
-
-    // Cerrar el menú si se hace clic fuera
     window.onclick = function(event) {
         if (!event.target.matches('.dropbtn')) {
             var dropdowns = document.getElementsByClassName("dropdown-content");
@@ -145,6 +131,5 @@
         }
     }
 </script>
-
 </body>
 </html>
