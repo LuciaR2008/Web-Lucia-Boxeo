@@ -62,7 +62,9 @@
 
         .dropbtn:hover { background-color: #555; }
 
-        .dropdown { position: relative; display: inline-block; }
+        .dropdown {
+            position: relative; display: inline-block;
+        }
 
         .dropdown-content {
             display: none;
@@ -75,21 +77,19 @@
             box-shadow: 0 8px 16px rgba(0,0,0,0.2);
             z-index: 30;
         }
-
         .dropdown-content a {
             color: #fff;
             padding: 12px 16px;
             text-decoration: none;
             display: block;
         }
-
         .dropdown-content a:hover { background-color: #666; }
 
         /* Clase para mostrar el menú */
         .show { display: block; }
 
         /* ===== SECCIONES CON IMÁGENES ===== */
-        .seccion {
+        .section {
             width: 100%;
             padding: 40px 0;
             display: flex;
@@ -98,7 +98,7 @@
             background-color: #fff;
         }
 
-        .seccion img {
+        .section img {
             max-width: 90%;
             height: auto;
             display: block;
@@ -109,11 +109,10 @@
 </head>
 
 <body>
-
     <!-- ===== ENCABEZADO ===== -->
     <header>
-        <img class="bg" src="file:///C:/Users/Jesus/Desktop/Yo%203/Fotos/Encabezado%201.png" alt="Encabezado">
-        <img class="logo" src="file:///C:/Users/Jesus/Desktop/Yo%203/Fotos/Logo.1%20Pag%20principal.png" alt="Logo">
+        <img class="bg" src="encabezado 1.png" alt="Encabezado">
+        <img class="logo" src="Logo.1 Pag principal.png" alt="Logo">
 
         <!-- Menú desplegable -->
         <div class="menu-superior">
@@ -129,37 +128,37 @@
     </header>
 
     <!-- ===== IMAGEN BAJO ENCABEZADO ===== -->
-    <section class="seccion">
-        <img src="file:///C:/Users/Jesus/Desktop/Yo%203/Fotos/Foto%20bajo%20encabezado%20-%20portada.png" alt="Artes marciales">
+    <section class="section">
+        <img src="Foto bajo encabezado - portada.png" alt="Artes marciales">
     </section>
 
-    <!-- ===== IMAGEN PARTE MEDIA ===== -->
-    <section class="seccion">
-        <img src="file:///C:/Users/Jesus/Desktop/Yo%203/Fotos/parte%20media%20pag%20principal.png" alt="Parte media">
+    <!-- ===== OTRA SECCIÓN MEDIA ===== -->
+    <section class="section">
+        <img src="parte media pag principal.png" alt="Parte media">
     </section>
 
-    <!-- ===== IMAGEN INFERIOR CON BOTONES ===== -->
-    <section class="seccion">
-        <img src="file:///C:/Users/Jesus/Desktop/Yo%203/Fotos/Botones%20inferiores%20pag%20principal.png" alt="Botones inferiores">
+    <!-- ===== SECCIÓN CON BOTONES ===== -->
+    <section class="section">
+        <img src="Botones inferiores pag principal.png" alt="Botones inferiores">
     </section>
 
 <script>
-    // Mostrar/ocultar menú desplegable al hacer clic en botón
+    // Mostrar/ocultar menú desplegable al hacer clic en el botón
     function toggleDropdown() {
         document.getElementById("myDropdown").classList.toggle("show");
     }
 
-    // Cerrar el menú si se hace clic fuera de él
+    // Cerrar el menú si se hace clic fuera
     window.onclick = function(event) {
-      if (!event.target.matches('.dropbtn')) {
-        var dropdowns = document.getElementsByClassName("dropdown-content");
-        for (var i = 0; i < dropdowns.length; i++) {
-          var openDropdown = dropdowns[i];
-          if (openDropdown.classList.contains('show')) {
-            openDropdown.classList.remove('show');
-          }
+        if (!event.target.matches('.dropbtn')) {
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            for (var i = 0; i < dropdowns.length; i++) {
+                var openDropdown = dropdowns[i];
+                if (openDropdown.classList.contains('show')) {
+                    openDropdown.classList.remove('show');
+                }
+            }
         }
-      }
     }
 </script>
 
